@@ -1,0 +1,56 @@
+Programming Language Used :- Java
+
+
+Build Source Code :-
+1. Import the source code in eclipse.
+2. Make Sure the Class Path of the project is set to project CAN. You can do this by right clicking the project CAN. Click on Run->Run Configurations->'Classpath' tab->User Entries. 
+3. User entries should include only project CAN.
+
+
+Note :-
+1. For the first peer, after you run, Please DON'T enter any options for the choices displayed. It is the first node.
+2. You can enter options for Join, Leave, Insert, Search, View and Exit starting from second node.
+
+
+Compile Source Code :-
+1.Open the terminal.
+2.Navigate to CAN project directory
+3.Navigate to 'src' folder inside CAN directory.
+4.Type command "javac */*/*/*.java" and press Enter. This will generate .class files.
+5.Create a JAR file by following the steps as specified below.
+6.Transfer this JAR file on other machine/s to run multiple clients.
+7.On the same Terminal, navigate to 'src' directory.
+8.Run makefile.
+
+
+Running On other clients :-
+1. Extract the JAR file to CAN directory.
+2. Open Terminal and Navigate to CAN folder.
+3. Type make all
+
+
+Creating JAR file :-
+1) Right click on project CAN.
+2) Select Export.
+3) Select Java Folder.
+4) Select JAR file.
+5) Click Next.
+6) Under projects to export, Select only project 'CAN'. Make sure to check .classpath and .project under CAN.
+7) Select the destination of export and Click Next.
+9) Click Next on Java Packaging Options.
+10) Under JAR Manifest Specification window, under Main class click Browse, select Client and click Ok.
+11) Click on Finish.
+
+
+Running the project :-
+1) Run the project on first machine. It will display its global IP address. Please make sure you don't enter any options as it is the first node.
+2) Run the project on other machine, enter 1 to select 'join'.
+3) Enter the identifier of your choice and IP address of first machine. Hit Enter.
+4) Join process will execute.
+5) Enter option '5' to view peer info.
+6) Perform insert, search and leave operations.
+
+
+
+
+
